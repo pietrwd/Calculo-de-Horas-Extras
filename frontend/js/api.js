@@ -4,7 +4,7 @@
 // 1) Depois de publicar o backend no Render, cole a URL dele abaixo
 //    (sem "/" no final), por exemplo: https://ajofer-dashboard-backend.onrender.com
 // 2) Em desenvolvimento local, o site usa automaticamente http://localhost:3000
-const PRODUCTION_API = 'https://SEU-BACKEND.onrender.com';
+const PRODUCTION_API = 'https://ajoferhorasextras.netlify.app/';
 
 const IS_LOCAL = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
 window.AJOFER_API_BASE = window.AJOFER_API_BASE || (IS_LOCAL ? 'http://localhost:3000' : PRODUCTION_API);

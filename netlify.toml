@@ -1,0 +1,3 @@
+[build]
+  # Site estatico: sem build, publica direto a pasta frontend
+  publish = "frontend"

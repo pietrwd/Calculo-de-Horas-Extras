@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap');
+
   :root{
     --bg:#b5dcf7;
     --panel:#b7dfff;
@@ -19,6 +21,7 @@
     --font-display:'Zilla Slab', serif;
     --font-body:'Inter', sans-serif;
     --font-mono:'IBM Plex Mono', monospace;
+    --font-auth-title:'Playfair Display', Georgia, serif;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -254,7 +257,7 @@
   }
   .auth-visual .logo-wrap{position:relative; z-index:2; text-align:center;}
   .auth-visual img.brand-logo{width:min(360px, 78%); display:block; margin:0 auto 22px; filter:drop-shadow(0 8px 24px rgba(0,0,0,.25));}
-  .auth-visual .brand-claim{font-family:var(--font-display); font-size:16.5px; font-weight:600; letter-spacing:.3px; color:#fff; opacity:.92; margin:0;}
+  .auth-visual .brand-claim{font-family:var(--font-auth-title); font-size:22px; font-weight:700; letter-spacing:.3px; color:#fff; margin:0;}
   .auth-visual .brand-claim-sub{font-size:12px; color:rgba(255,255,255,.72); text-transform:uppercase; letter-spacing:2px; margin-top:8px;}
 
   .auth-form-side{
@@ -262,9 +265,18 @@
     padding:32px 24px;
   }
   .auth-card{width:100%; max-width:400px;}
-  .auth-card .auth-eyebrow{font-size:12px; color:var(--text-dim); font-weight:600;}
-  .auth-card h1{font-family:var(--font-display); font-size:26px; font-weight:600; margin:4px 0 6px; color:var(--text);}
-  .auth-card p.auth-sub{color:var(--text-dim); font-size:13.5px; margin:0 0 26px; line-height:1.55;}
+  .auth-card .auth-eyebrow{
+    font-family:var(--font-body); font-size:12px; font-weight:700;
+    letter-spacing:.18em; text-transform:uppercase; color:var(--brand-blue);
+  }
+  .auth-card h1{
+    font-family:var(--font-auth-title); font-size:44px; font-weight:800;
+    line-height:1.05; letter-spacing:-.5px; margin:6px 0 10px; color:#0B1F4D;
+  }
+  .auth-card p.auth-sub{
+    font-family:var(--font-body); color:#24457A; font-size:15px; font-weight:500;
+    margin:0 0 28px; line-height:1.6;
+  }
   .auth-field{margin-bottom:16px;}
   .auth-field label{display:block; font-size:12.5px; font-weight:600; color:var(--text); margin-bottom:6px;}
   .auth-field .hint{font-weight:400; color:var(--text-dim); font-size:11.5px;}

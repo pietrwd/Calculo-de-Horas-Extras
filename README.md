@@ -200,3 +200,9 @@ Em ambiente local, o `api.js` usa `http://localhost:3000` automaticamente.
 ## Observações
 
 - Todos os usuários compartilham o mesmo dashboard (`workspace_id = 'default'`). A última pessoa a clicar em **Salvar alterações** define o estado salvo.
+
+---
+
+## Créditos 
+
+- Projeto desenvolvido por: Pietro Dias.

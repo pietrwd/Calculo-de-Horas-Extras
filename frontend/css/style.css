@@ -337,5 +337,14 @@
     .auth-form-side{padding:32px 20px 48px;}
   }
 
+  /* ===== CAIXAS BRANCAS COM BORDA AZUL-MARINHO ===== */
+.clock-card,
+.stat-card,
+.punch-card,
+.chart-card,
+.employee-card{
+  background:#fff;
+  border:1px solid #0B1F4D;
+}
   #screen-dashboard .topbar .btn-employee{background:var(--secondary); color:#5C4308; border-color:var(--secondary-dark);}
   #screen-dashboard .topbar .btn-employee:hover{background:var(--secondary-dark); color:#fff;}

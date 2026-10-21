@@ -344,7 +344,7 @@
 .chart-card,
 .employee-card{
   background:#fff;
-  border:1px solid #0B1F4D;
+  border:1px solid #1B2F6B;
 }
   #screen-dashboard .topbar .btn-employee{background:var(--secondary); color:#5C4308; border-color:var(--secondary-dark);}
   #screen-dashboard .topbar .btn-employee:hover{background:var(--secondary-dark); color:#fff;}

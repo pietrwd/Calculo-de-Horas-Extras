@@ -199,5 +199,4 @@ Em ambiente local, o `api.js` usa `http://localhost:3000` automaticamente.
 
 ## Observações
 
-- O plano gratuito do Render suspende o serviço após inatividade, e a primeira requisição depois disso pode levar 30 a 50 segundos.
 - Todos os usuários compartilham o mesmo dashboard (`workspace_id = 'default'`). A última pessoa a clicar em **Salvar alterações** define o estado salvo.

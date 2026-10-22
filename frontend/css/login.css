@@ -14,39 +14,39 @@
 .login-screen .login-form-side{
   position:relative; z-index:3;
   flex:0 0 46%; max-width:46%;
-  display:flex; flex-direction:column; justify-content:center;
-  padding:48px 24px 48px clamp(32px, 8vw, 140px);
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  padding:40px 5% 40px 4%;
 }
-.login-screen .login-card{width:100%; max-width:500px;}
+.login-screen .login-card{width:100%; max-width:390px;}
 
 .login-screen .login-logo{
-  display:block; width:min(340px, 66%); height:auto; margin:0 0 44px -4px;
+  display:block; width:min(250px, 70%); height:auto; margin:0 0 30px -2px;
 }
 .login-screen .login-card h1{
-  font-family:'Inter', sans-serif; font-size:44px; font-weight:800;
-  letter-spacing:-.8px; line-height:1.05; margin:0 0 10px; color:#0B2350;
+  font-family:'Inter', sans-serif; font-size:36px; font-weight:800;
+  letter-spacing:-.6px; line-height:1.1; margin:0 0 8px; color:#0B2350;
 }
 .login-screen .login-card p.auth-sub{
-  font-family:'Inter', sans-serif; font-size:16px; font-weight:400;
-  line-height:1.6; color:#7A8BA3; margin:0 0 30px; max-width:420px;
+  font-family:'Inter', sans-serif; font-size:14.5px; font-weight:400;
+  line-height:1.55; color:#7A8BA3; margin:0 0 22px;
 }
 
 /* campos */
-.login-screen .auth-field{margin-bottom:18px;}
+.login-screen .auth-field{margin-bottom:14px;}
 .login-screen .auth-field label{
-  font-size:14px; font-weight:700; color:#0B2350; margin-bottom:8px;
+  font-size:13px; font-weight:700; color:#0B2350; margin-bottom:6px;
 }
 .login-screen .input-icon,
 .login-screen .pw-wrap{position:relative;}
 .login-screen .input-icon > svg{
-  position:absolute; left:16px; top:50%; transform:translateY(-50%);
-  width:20px; height:20px; stroke:#0B55D9; fill:none; stroke-width:1.8;
+  position:absolute; left:14px; top:50%; transform:translateY(-50%);
+  width:18px; height:18px; stroke:#0B55D9; fill:none; stroke-width:1.8;
   stroke-linecap:round; stroke-linejoin:round; pointer-events:none;
 }
 .login-screen .auth-field input{
-  width:100%; height:58px; padding:0 16px 0 48px;
+  width:100%; height:48px; padding:0 14px 0 44px;
   background:#fff; border:1px solid #D5E3F5; border-radius:12px;
-  font-size:15px; color:#0B2350;
+  font-size:14px; color:#0B2350;
   box-shadow:0 1px 2px rgba(11,35,80,.04);
   transition:border-color .15s, box-shadow .15s;
 }
@@ -55,10 +55,10 @@
   outline:none; border-color:#0B55D9; box-shadow:0 0 0 3px rgba(11,85,217,.14);
 }
 .login-screen .auth-field.error input{border-color:var(--red);}
-.login-screen .pw-wrap input{padding-right:110px;}
+.login-screen .pw-wrap input{padding-right:100px;}
 .login-screen .pw-toggle{
   right:14px; display:flex; align-items:center; gap:7px;
-  color:#0B55D9; font-size:13.5px; font-weight:600; font-family:'Inter', sans-serif;
+  color:#0B55D9; font-size:12.5px; font-weight:600; font-family:'Inter', sans-serif;
 }
 .login-screen .pw-toggle::before{
   content:''; width:20px; height:20px; flex-shrink:0;
@@ -67,11 +67,11 @@
 }
 
 /* botão */
-.login-screen .auth-actions{margin-top:24px;}
+.login-screen .auth-actions{margin-top:20px;}
 .login-screen .btn-auth{
-  width:100%; height:58px; border:none; border-radius:12px;
+  width:100%; height:48px; border:none; border-radius:10px;
   background:linear-gradient(180deg, #0F5FE6 0%, #0A4FCC 100%);
-  color:#fff; font-size:17px; font-weight:700; letter-spacing:.2px;
+  color:#fff; font-size:15.5px; font-weight:700; letter-spacing:.2px;
   box-shadow:0 8px 20px rgba(11,85,217,.28);
   transition:transform .1s, box-shadow .15s, filter .15s;
 }
@@ -79,25 +79,25 @@
 .login-screen .btn-auth:active{transform:scale(.985);}
 .login-screen .btn-auth:disabled{opacity:.7; cursor:wait;}
 
-.login-screen .auth-links{margin-top:20px;}
+.login-screen .auth-links{margin-top:16px;}
 .login-screen .auth-links button.link{
-  color:#0B55D9; font-size:14.5px; font-weight:600;
+  color:#0B55D9; font-size:13px; font-weight:600;
 }
 
 .login-screen .auth-note{
-  margin-top:22px; background:rgba(255,255,255,.7); border:1px solid #D5E3F5;
+  margin-top:18px; background:rgba(255,255,255,.7); border:1px solid #D5E3F5;
   color:#6B7C93; border-radius:10px;
 }
 .login-screen .auth-note:empty{display:none;}
 
 /* frase no rodapé do lado esquerdo */
 .login-screen .login-tagline{
-  position:static; margin-top:44px;
-  font-size:13px; font-weight:500; letter-spacing:.32em; line-height:1.9;
+  position:static; align-self:center; width:100%; max-width:390px; margin-top:32px;
+  font-size:11.5px; font-weight:500; letter-spacing:.32em; line-height:1.9;
   color:#0B55D9; text-transform:uppercase;
 }
 .login-screen .login-tagline::before{
-  content:''; display:block; width:54px; height:3px; background:#0B55D9; margin-bottom:16px;
+  content:''; display:block; width:44px; height:3px; background:#0B55D9; margin-bottom:12px;
 }
 
 /* ---------- LADO DIREITO: foto com recorte diagonal ---------- */
@@ -158,17 +158,17 @@
 /* ---------- Telas baixas (notebooks): compacta o espaçamento ---------- */
 @media (min-width:861px) and (max-height:860px){
   .login-screen .login-form-side{padding-top:24px; padding-bottom:24px;}
-  .login-screen .login-logo{width:min(290px, 70%); margin-bottom:24px;}
-  .login-screen .login-card h1{font-size:38px;}
-  .login-screen .login-card p.auth-sub{font-size:15px; margin-bottom:18px;}
-  .login-screen .auth-field{margin-bottom:12px;}
+  .login-screen .login-logo{width:min(220px, 66%); margin-bottom:18px;}
+  .login-screen .login-card h1{font-size:32px;}
+  .login-screen .login-card p.auth-sub{font-size:14px; margin-bottom:14px;}
+  .login-screen .auth-field{margin-bottom:10px;}
   .login-screen .auth-field input,
-  .login-screen .btn-auth{height:52px;}
+  .login-screen .btn-auth{height:44px;}
   .login-screen .auth-actions{margin-top:16px;}
   .login-screen .auth-links{margin-top:14px;}
   .login-screen .auth-note{margin-top:14px; padding:9px 12px;}
-  .login-screen .login-tagline{margin-top:22px;}
-  .login-screen .login-tagline::before{margin-bottom:10px;}
+  .login-screen .login-tagline{margin-top:18px;}
+  .login-screen .login-tagline::before{margin-bottom:8px;}
 }
 
 /* ---------- Celular / tablet: foto vira faixa no topo ---------- */
@@ -188,10 +188,10 @@
   .login-screen .login-form-side{
     flex:1 1 auto; max-width:100%; padding:8px 24px 40px;
   }
-  .login-screen .login-logo{width:min(260px, 70%); margin-bottom:26px;}
-  .login-screen .login-card h1{font-size:36px;}
+  .login-screen .login-logo{width:min(230px, 66%); margin-bottom:22px;}
+  .login-screen .login-card h1{font-size:32px;}
   .login-screen .login-tagline{
-    margin-top:34px; font-size:11.5px;
+    margin-top:28px; font-size:11px;
   }
 }
 

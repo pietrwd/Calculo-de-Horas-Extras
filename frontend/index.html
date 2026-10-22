@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
@@ -15,18 +16,10 @@
 <script src="js/api.js"></script>
 
 
-<div class="auth-screen" id="screen-login">
-  <div class="auth-visual">
-    <div class="speedlines" aria-hidden="true"></div>
-    <div class="logo-wrap">
-      <img class="brand-logo" src="assets/logo.jpg" alt="Transportadora Ajofer">
-      <p class="brand-claim">Dashboard de Horas Extras</p>
-      <p class="brand-claim-sub">Controle de ponto &amp; folha PJ</p>
-    </div>
-  </div>
-  <div class="auth-form-side">
-    <div class="auth-card">
-      <div class="auth-eyebrow">Transportadora Ajofer</div>
+<div class="auth-screen login-screen" id="screen-login">
+  <div class="login-form-side">
+    <div class="login-card">
+      <img class="login-logo" src="assets/logo-azul.png" alt="Transportadora Ajofer">
       <h1>Entrar</h1>
       <p class="auth-sub">Acesse o dashboard com seu usuário e senha cadastrados.</p>
 
@@ -35,19 +28,23 @@
       <form id="loginForm" novalidate>
         <div class="auth-field" id="fieldLoginUser">
           <label for="loginUsername">Login</label>
-          <input type="text" id="loginUsername" autocomplete="username" placeholder="Seu nome de usuário">
+          <div class="input-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <input type="text" id="loginUsername" autocomplete="username" placeholder="Seu nome de usuário">
+          </div>
           <div class="err-msg">Informe seu login.</div>
         </div>
         <div class="auth-field" id="fieldLoginPass">
           <label for="loginPassword">Senha</label>
-          <div class="pw-wrap">
+          <div class="pw-wrap input-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><path d="M12 15v2"/></svg>
             <input type="password" id="loginPassword" autocomplete="current-password" placeholder="Sua senha">
             <button type="button" class="pw-toggle" data-toggle="loginPassword">Mostrar</button>
           </div>
           <div class="err-msg">Informe sua senha.</div>
         </div>
         <div class="auth-actions">
-          <button type="submit" class="btn-auth">Entrar</button>
+          <button type="submit" class="btn-auth">Entrar →</button>
         </div>
       </form>
 
@@ -58,6 +55,28 @@
 
       <div class="auth-note" id="seedHint"></div>
     </div>
+
+    <div class="login-tagline">Juntos em<br>todos os destinos</div>
+  </div>
+
+  <div class="login-visual" aria-hidden="true">
+    <div class="login-stripe"></div>
+    <div class="login-photo"></div>
+    <div class="login-claim">Mais organização<br>para o seu dia a dia</div>
+    <ul class="login-features">
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <span>Segurança<br>nos processos</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Gestão eficiente<br>de pessoas</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M2 6h11v10H2z"/><path d="M13 9h4l3 3v4h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>
+        <span>Movendo<br>o seu futuro</span>
+      </li>
+    </ul>
   </div>
 </div>
 

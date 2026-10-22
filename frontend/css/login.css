@@ -20,10 +20,10 @@
 .login-screen .login-card{width:100%; max-width:500px;}
 
 .login-screen .login-logo{
-  display:block; width:min(340px, 78%); height:auto; margin:0 0 44px -4px;
+  display:block; width:min(340px, 66%); height:auto; margin:0 0 44px -4px;
 }
 .login-screen .login-card h1{
-  font-family:'Inter', sans-serif; font-size:46px; font-weight:800;
+  font-family:'Inter', sans-serif; font-size:44px; font-weight:800;
   letter-spacing:-.8px; line-height:1.05; margin:0 0 10px; color:#0B2350;
 }
 .login-screen .login-card p.auth-sub{
